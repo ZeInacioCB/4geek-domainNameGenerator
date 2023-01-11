@@ -15,11 +15,32 @@
   <body>
     <div class="container-fluid text-center">
       <h1 class="mt-5">Hello Rigo!</h1>
+      <h2>
+        Don't like the current domain? Click the yellow area for a new one!
+      </h2>
       <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <div class="row alert alert-primary mt-4 w-50 m-auto">
+        <div class="col">
+          <p class="my-0">Which domain extension do you want to use?</p>
+        </div>
+        <div class="col">
+          <select
+            name="extension"
+            id="extension"
+            class="form-select py-0 text-center"
+          >
+            <option value=".com">.com</option>
+            <option value=".net">.net</option>
+            <option value=".us">.us</option>
+            <option value=".es">.es</option>
+            <option value=".io">.io</option>
+            <option value=".uk">.uk</option>
+          </select>
+        </div>
+      </div>
+      <h6 id="domain" class="alert alert-warning mt-4 w-50 m-auto">
+        domain
+      </h6>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
