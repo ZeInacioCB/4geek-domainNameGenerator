@@ -16,12 +16,12 @@
     <div class="container-fluid text-center">
       <h1 class="mt-5">Hello Rigo!</h1>
       <h2>
-        Don't like the current domain? Click the yellow area for a new one!
+        Don't like the current domain? Click Rigo for a new one!
       </h2>
-      <img src="./rigo-baby.jpg" />
-      <div class="row alert alert-primary mt-4 w-50 m-auto">
+      <img id="rigo" src="./rigo-baby.jpg" />
+      <div class="row alert alert-primary mt-4 w-75 w-lg-50 m-auto">
         <div class="col">
-          <p class="my-0">Which domain extension do you want to use?</p>
+          <p class="my-0">Choose domain extension:</p>
         </div>
         <div class="col">
           <select
@@ -38,10 +38,14 @@
           </select>
         </div>
       </div>
-      <h6 id="domain" class="alert alert-warning mt-4 w-50 m-auto">
+      <h6 id="domain" class="alert alert-warning mt-4 w-75 w-lg-50 m-auto">
         domain
       </h6>
-      <div class="fixed-bottom p-4">
+      <div
+        id="domainList"
+        class="alert alert-success mt-4 w-75 w-lg-50 m-auto"
+      ></div>
+      <div class="p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
